@@ -31,6 +31,18 @@ with c1:
 with c2:
     div = st.selectbox("Division", ["All"] + divisions)
 
+with st.sidebar:
+    st.header("About Me")
+    st.write(
+        "Hi, I'm **Waqas**! I dig up useful AI tools and turn the best ones into "
+        "small free web apps anyone can use.\n\n"
+        "This directory makes **279 open-source AI specialist agents** easy to "
+        "browse — just search, no setup needed. If an agent helps your work, "
+        "pass it on.\n\n"
+        "I also run **DrawSew**, an embroidery digitizing studio. "
+        "More AI finds coming regularly — stay tuned! 🚀"
+    )
+
 
 def matches(a):
     if div != "All" and a["division_label"] != div:
